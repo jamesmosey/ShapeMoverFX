@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+   <children>
+      <Button fx:id="right" layoutX="1811.0" layoutY="516.0" mnemonicParsing="false" onAction="#rightS" text="RIGHT" />
+      <Button fx:id="left" layoutX="14.0" layoutY="516.0" mnemonicParsing="false" onAction="#leftS" text="LEFT" />
+      <Button fx:id="up" layoutX="945.0" layoutY="14.0" mnemonicParsing="false" onAction="#upS" text="UP" />
+      <Button fx:id="down" layoutX="934.0" layoutY="1025.0" mnemonicParsing="false" onAction="#downS" text="DOWN" />
+      <Button layoutX="60.0" layoutY="52.0" mnemonicParsing="false" onAction="#switchToCircle" text="Switch to circle!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="mySquare" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="860.0" layoutY="429.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   </children>
+</AnchorPane>
