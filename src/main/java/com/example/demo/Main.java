@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -23,6 +24,12 @@ public class Main extends Application {
 
         //Disabling resizing of the GUI
         stage.setResizable(false);
+
+
+        stage.setFullScreen(true);
+        stage.setFullScreenExitHint("Press F to exit");
+        stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("f"));
+
 
         //Setting the title and icon of the GUI
         stage.setTitle("Move the circle!");
